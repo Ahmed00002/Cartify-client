@@ -25,6 +25,19 @@
   .hoverPrimary {
     @apply hover:text-Primary transition-all duration-300;
   }
+
+  .navMenu > a {
+    @apply hover:text-white;
+  }
+
+  .btnPrimary {
+    @apply bg-Primary hover:bg-hardPrimary text-white hover:text-white 
+         px-10 py-[10px] rounded-full cursor-pointer text-base;
+  }
+
+  .btnCircle {
+    @apply bg-none border-2 border-Primary hover:border-hardPrimary text-Primary hover:text-hardPrimary px-10 py-[10px] rounded-full cursor-pointer text-xl;
+  }
 }
 
 @theme inline {

@@ -13,6 +13,18 @@ import { CiSearch } from "react-icons/ci";
 import { Input } from "./ui/input";
 import { GoHeart } from "react-icons/go";
 import { BsHandbag } from "react-icons/bs";
+import { PiPhoneCallLight } from "react-icons/pi";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "./ui/navigation-menu";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   return (
@@ -73,15 +85,18 @@ const Navbar = () => {
 
           {/* Logo - Search Button - Cart Icon */}
           <div className="center flex justify-between items-center">
+            {/*  */}
             {/* logo */}
             <div className="py-7 flex items-center gap-2">
               <img className="size-8" src={logo} alt="Cartify Logo" />
               <h1 className="text-4xl font-semibold text-black">Cartify</h1>
             </div>
+
             {/* search icon */}
             <div className="flex items-center w-[400px] h-12 border border-gray-300  rounded-md">
               <div className="px-4 flex items-center flex-1">
                 <CiSearch size={24} />
+                {/* search input */}
                 <Input
                   className={
                     "outline-none focus-visible:ring-0 border-none shadow-none"
@@ -89,14 +104,16 @@ const Navbar = () => {
                   placeholder={"Search"}
                 />
               </div>
+              {/* search button */}
               <Button
                 className={
-                  "bg-Primary text-white rounded-r-md rounded-l-none h-full w-auto px-6 cursor-pointer hover:bg-softPrimary"
+                  "bg-Primary text-white rounded-r-md rounded-l-none h-full w-auto px-6 cursor-pointer hover:bg-hardPrimary hover:text-white"
                 }
               >
                 Search
               </Button>
             </div>
+
             {/* Cart and Wishlist */}
             <div className="flex items-center">
               {/* wishlist */}
@@ -118,6 +135,47 @@ const Navbar = () => {
                   <h1 className="text-md text-gray-700">Shopping Cart</h1>
                   <h1 className="text-md text-black font-bold">$57.00</h1>
                 </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Nav menus and Phone */}
+          <div className="bg-gray-800 py-4">
+            {/*  */}
+            <div className="center flex justify-between ">
+              {/* Nav Menu */}
+              <NavigationMenu className={"text-gray-400"}>
+                <NavigationMenuList className={"gap-8 navMenu"}>
+                  <NavigationMenuItem>
+                    <NavLink to={"/"}>Home</NavLink>
+                  </NavigationMenuItem>
+
+                  <NavigationMenuItem>
+                    <NavLink to={"/shop"}>Shop</NavLink>
+                  </NavigationMenuItem>
+
+                  <NavigationMenuItem>
+                    <NavLink to={"/pages"}>Pages</NavLink>
+                  </NavigationMenuItem>
+
+                  <NavigationMenuItem>
+                    <NavLink to={"/blog"}>Blog</NavLink>
+                  </NavigationMenuItem>
+
+                  <NavigationMenuItem>
+                    <NavLink to={"/about-us"}>About Us</NavLink>
+                  </NavigationMenuItem>
+
+                  <NavigationMenuItem>
+                    <NavLink to={"/contact-us"}>Contact Us</NavLink>
+                  </NavigationMenuItem>
+                </NavigationMenuList>
+              </NavigationMenu>
+
+              {/* Phone Number */}
+              <div className="flex items-center gap-2 text-white">
+                <PiPhoneCallLight size={28} />
+                <p className="cursor-pointer">(219) 555-0114</p>
               </div>
             </div>
           </div>

@@ -1,7 +1,14 @@
 import React from "react";
+import Header from "../shared/Header";
 
 function HomePage() {
-  return <div>{/* <h1>home</h1> */}</div>;
+  return (
+    <div>
+      <div>
+        <Header></Header>
+      </div>
+    </div>
+  );
 }
 
 export default HomePage;
