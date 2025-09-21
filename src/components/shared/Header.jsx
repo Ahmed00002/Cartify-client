@@ -42,7 +42,7 @@ const Header = () => {
             alt="leaf 1"
           />
           <img
-            className="absolute -z-10 -top-4 -right-12 "
+            className="absolute -z-10 -top-4 - right-12 "
             src={img2}
             alt="leaf 1"
           />

@@ -38,6 +38,27 @@
   .btnCircle {
     @apply bg-none border-2 border-Primary hover:border-hardPrimary text-Primary hover:text-hardPrimary px-10 py-[10px] rounded-full cursor-pointer text-xl;
   }
+
+  .iconBg {
+    background-image: url("../src/assets/icons/IconBgSoft.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .featuresContainer:hover .iconBg {
+    background-image: url("../src/assets/icons/IconBgHard.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: all;
+    transition-duration: 500ms;
+  }
+
+  .featuresContainer:hover .iconBg > img {
+    filter: invert(100%) brightness(0%) sepia(100%) saturate(100%)
+      hue-rotate(180deg);
+  }
 }
 
 @theme inline {
