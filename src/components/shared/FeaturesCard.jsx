@@ -11,8 +11,8 @@ const FeaturesCard = (feature) => {
             <img className={`size-8 `} src={icon} alt="" />
           </div>
         </div>
-        <h1 className="text-xl font-bold">{title}</h1>
-        <h2 className="mt-2 text-gray-500 text-base">{description}</h2>
+        <h1 className="text-lg font-bold">{title}</h1>
+        <h2 className="mt-2 text-gray-500 text-sm">{description}</h2>
       </div>
     </>
   );
