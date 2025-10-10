@@ -6,6 +6,10 @@ import { Button } from "./ui/button";
 import { ArrowRight } from "lucide-react";
 // leaf icon
 import leaf5 from "../assets/leaf/leaf5.svg";
+import leaf3 from "../assets/leaf/leaf3.png";
+import Gajor from "../assets/leaf/Gajor.svg";
+import Begun from "../assets/leaf/Begun.svg";
+import brush from "../assets/leaf/Brush.svg";
 import bluredLeaf from "../assets/leaf/bluredLeaf.svg";
 
 const TrustedFoodSection = () => {
@@ -28,7 +32,7 @@ const TrustedFoodSection = () => {
 
   return (
     <>
-      <section className="center py-20 grid grid-cols-12 gap-6">
+      <section className="center py-20 grid grid-cols-12 gap-6 relative">
         <div className="col-span-3  h-[400px] relative ">
           <img src={img1} alt="" className="h-full object-cover rounded-sm" />
           <img
@@ -51,7 +55,7 @@ const TrustedFoodSection = () => {
           </h1>
           {/* OPtions */}
           {features.map((feature) => (
-            <div className="flex gap-3">
+            <div key={feature.id} className="flex gap-3">
               <div>
                 <IoCheckmarkCircle size={24} className="text-Primary" />
               </div>
@@ -78,6 +82,27 @@ const TrustedFoodSection = () => {
             </Button>
           </div>
         </div>
+        {/* Floating images */}
+        <img
+          src={leaf3}
+          alt="Image of leaf"
+          className="absolute -bottom-5 right-[124px]"
+        />
+        <img
+          src={Gajor}
+          alt="Image of leaf"
+          className="absolute bottom-[225px] right-[35px] -z-10"
+        />
+        <img
+          src={Begun}
+          alt="Image of leaf"
+          className="absolute bottom-[35px] left-[54px] -z-10"
+        />
+        <img
+          src={brush}
+          alt="Image of leaf"
+          className="absolute bottom-[310px] -left-[300px] -z-10"
+        />
       </section>
     </>
   );

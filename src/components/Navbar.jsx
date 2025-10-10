@@ -119,7 +119,7 @@ const Navbar = () => {
               {/* wishlist */}
               <div className="px-4 border-r-2">
                 <GoHeart
-                  className="cursor-pointer hover:text-danger transition-all duration-300"
+                  className="cursor-pointer hover:text-error transition-all duration-300"
                   size={28}
                 />
               </div>

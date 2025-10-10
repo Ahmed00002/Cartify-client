@@ -38,7 +38,7 @@ const Features = () => {
       <section className="center">
         <div className="grid grid-cols-4 gap-6">
           {features.map((feature) => (
-            <FeaturesCard feature={feature} />
+            <FeaturesCard key={feature.id} feature={feature} />
           ))}
         </div>
       </section>
