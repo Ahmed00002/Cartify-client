@@ -11,7 +11,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 
 const TestimonialSection = () => {
   const [swiperInstance, setSwiperInstance] = useState();
@@ -68,10 +68,11 @@ const TestimonialSection = () => {
               modifier: 1,
               slideShadows: false,
             }}
-            modules={[EffectCoverflow, Pagination]}
+            modules={[EffectCoverflow, Pagination, Autoplay]}
             className="mySwiper"
             loop={true}
             onSwiper={setSwiperInstance}
+            autoplay
           >
             {[...Array(6)].map((_, i) => (
               <SwiperSlide key={i}>
