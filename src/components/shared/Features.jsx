@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import FeaturesCard from "./FeaturesCard";
+import FeaturesCard from "../cards/FeaturesCard";
 import icon1 from "../../assets/icons/icon (1).svg";
 import icon2 from "../../assets/icons/icon (2).svg";
 import icon3 from "../../assets/icons/icon (3).svg";

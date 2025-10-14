@@ -1,5 +1,5 @@
-import CategoryCard from "./shared/CategoryCard";
-import ProductCard from "./shared/ProductCard";
+import CategoryCard from "./cards/CategoryCard";
+import ProductCard from "./cards/ProductCard";
 import SectionTitle from "./shared/SectionTitle";
 import vegetable from "../assets/categories/Vegetable.svg";
 import fruit from "../assets/categories/fruits 1.svg";

@@ -7,6 +7,8 @@ import TrustedFoodSection from "../TrustedFoodSection";
 import StatisticsSection from "../StatisticsSection";
 import OfferSection from "../shared/OfferSection";
 import BestSaleSection from "../BestSaleSection";
+import BlogSection from "../BlogSection";
+import TestimonialSection from "../TestimonialSection";
 
 function HomePage() {
   return (
@@ -22,6 +24,9 @@ function HomePage() {
         <OfferSection></OfferSection>
         {/* Best Seller Products Section */}
         <BestSaleSection></BestSaleSection>
+        {/* Blog section */}
+        <BlogSection></BlogSection>
+        <TestimonialSection></TestimonialSection>
       </div>
     </div>
   );

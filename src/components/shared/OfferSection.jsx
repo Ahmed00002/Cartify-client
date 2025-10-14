@@ -34,13 +34,14 @@ const OfferSection = () => {
                 </Button>{" "}
               </p>
               {/* ShopNow Button */}
-              <button
+              <Button
+                size={"xl"}
                 className={
-                  "bg-Primary px-10 py-3 text-sm rounded-full text-white hover:bg-hardPrimary cursor-pointer mt-6 flex gap-2 items-center"
+                  "bg-Primary text-sm rounded-full text-white hover:bg-hardPrimary cursor-pointer mt-6 flex gap-2 items-center"
                 }
               >
                 Shop Now <ArrowRight size={15} />
-              </button>
+              </Button>
             </div>
           </div>
           {/* Offer 2 */}
@@ -67,13 +68,14 @@ const OfferSection = () => {
                 </Button>{" "}
               </p>
               {/* ShopNow Button */}
-              <button
+              <Button
+                size={"xl"}
                 className={
-                  "bg-Primary px-10 py-3 text-sm rounded-full text-white hover:bg-hardPrimary cursor-pointer mt-6 flex gap-2 items-center"
+                  "bg-Primary text-sm rounded-full text-white hover:bg-hardPrimary cursor-pointer mt-6 flex gap-2 items-center"
                 }
               >
                 Shop Now <ArrowRight size={15} />
-              </button>
+              </Button>
             </div>
           </div>
         </div>

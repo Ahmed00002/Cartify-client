@@ -1,6 +1,6 @@
 import React from "react";
 import SectionTitle from "./shared/SectionTitle";
-import ProductCard from "./shared/ProductCard";
+import ProductCard from "./cards/ProductCard";
 
 const ProductSection = ({ sectionTitle, Products }) => {
   return (

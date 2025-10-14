@@ -1,5 +1,5 @@
-import iconBgSoft from "../../assets/icons/IconBgSoft.svg";
-import iconBgHard from "../../assets/icons/IconBgHard.svg";
+// import iconBgSoft from "../../assets/icons/IconBgSoft.svg";
+// import iconBgHard from "../../assets/icons/IconBgHard.svg";
 
 const FeaturesCard = (feature) => {
   const { title, description, icon } = feature.feature;

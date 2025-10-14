@@ -1,5 +1,5 @@
 import React from "react";
-import DealingProductsCard from "./shared/DealingProductsCard";
+import DealingProductsCard from "./cards/DealingProductsCard";
 
 const DealsSection = ({ title }) => {
   return (
